@@ -10,5 +10,5 @@ var config = {
 
 firebase.initializeApp(config);
 
-// Create a varialble to reference the database
+// Create a variable to reference the database
 var database = firebase.database();
