@@ -46,3 +46,25 @@ $("#add-train-btn").on("click", function(event) {
   // $("#first-train-input").val("");
   $("#frequency-input").val("");
 });
+
+// Create a firebase event for adding the data from the new trains and then populating them in the DOM.
+database.ref().on("child_added", function(childSnapshot, prevChildKey) {
+  console.log(childSnapshot.val());
+
+  // Store snapshot changes in variables
+  var trnName = childSnapshot.val().name;
+  var trnDest = childSnapshot.val().destination;
+  // var firstTrnTime = childSnapshot.val().firstTime;
+  var trnFreq = childSnapshot.val().frequency;
+
+  // Log the values
+  console.log(trnName);
+  console.log(trnDest);
+  // console.log(firstTrnTime);
+  console.log(trnFreq);
+
+  // Need to add in steps that will calculate the date/time fields!
+
+  // Add the data into the DOM/html
+  $("#train-table > tbody").append("<tr><td>" + trnName + "</td><td>" + trnDest + "</td><td>" + trnFreq + "</td></tr>");
+});
