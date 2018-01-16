@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+# Train-Scheduler
+This project shows the most up-to-date train information and scheduling for the fictional Gotham City Transit Authority. Users have the ability to add information on a new train and can check the status of the existing trains on the site.
 
-You can use the [editor on GitHub](https://github.com/zwpleasant/Train-Scheduler/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Instructions
+Browse the site for existing train information. If you do not see a train and have updated information, please use in the "Add a Train" form below the "Current Train Schedule." When adding information on a new train, enter in the train ,ame, destination, the time of the first train (in HH:mm military time), and the frequency in which it arrives (in minutes). The "Next Arrival" and "Minutes Away" fields will automatically be calculated after entering in the previous information. Enjoy!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Technologies Used
+- [jQuery](https://api.jquery.com/)
+- [Firebase](https://firebase.google.com/)
+- [Moment.js](https://momentjs.com/)
+- [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 
-### Markdown
+## Authors
+- **Zach Pleasant** - *Northwestern Coding Bootcamp* - [zwpleasant](https://github.com/zwpleasant)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/zwpleasant/Train-Scheduler/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Acknowledgments
+- [Northwestern Coding Bootcamp](https://bootcamp.northwestern.edu/coding/)
+- [Wikipedia of Gotham City](https://en.wikipedia.org/wiki/Gotham_City) for a list of places.
