@@ -76,7 +76,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
   // calculate and store the minutes until next train arrives
   var minutesAway = trnFreq - timeLeft;
   // calculate the next arriving train
-  var nextArrival = moment().add(nextArrival, "minutes").format("hh:mm a");
+  var nextArrival = moment().add(minutesAway, "minutes").format("hh:mm a");
 
   // add the data into the DOM/html
   $("#train-table > tbody").append("<tr><td>" + trnName + "</td><td>" + trnDest + "</td><td>" + trnFreq + "</td><td>" + nextArrival + "</td><td>" + minutesAway + "</td></tr>");
