@@ -9,8 +9,8 @@ body {
   border: 10px #646464 solid;
 }
 .cityPic {
-  max-width: 1000px;
-  overflow: hidden;
+  max-width: 100%;
+  margin: auto;
 }
 .btn {
   background-color: #646464;
