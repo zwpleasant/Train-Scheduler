@@ -9,9 +9,12 @@
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  <!-- Bootstrap CDN-->
+  <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Custom CSS file -->
+  <link rel="stylesheet" href="assets/style.css">
 
   <!-- Firebase Reference -->
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
@@ -28,8 +31,21 @@
 
     <!-- Header for page -->
     <div class="jumbotron">
-      <h1 class="text-center">Placeholder text</h1>
-      <h3 class="text-center">Placeholder text</h3>
+      <div class="row">
+        <div class="col-md-12">
+          <img src="assets/images/gothamcity.png" alt="Gotham City" class="cityPic">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-center"><strong>Gotham City Transit Authority</strong></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="text-center">The most up-to-date train information and scheduler for the GCTA.</h3>
+        </div>
+      </div>
     </div>
 
     <!-- Contains both tables on page -->
@@ -93,7 +109,7 @@
                 <label>Frequency (minutes)</label>
                 <input class="form-control" id="frequency-input" type="text">
               </div>
-              <button class="btn btn-primary" id="add-train-btn" type="submit">Submit</button>
+              <button class="btn" id="add-train-btn" type="submit">Submit</button>
             </form>
 
           </div>
